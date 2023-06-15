@@ -1,0 +1,22 @@
+.class-header {
+  color: rgb(250, 249, 250);
+  border: 1px solid rgb(21, 17, 17);
+  background-color: black;
+}
+
+.class-nav{
+    border: 1px solid black;
+}
+
+.container-conteudos {
+    border: 1px solid black;
+
+}
+
+.container-imagens{
+    border: 1px solid black;
+}
+
+.container-footer{
+    border: 1px solid black;
+}
