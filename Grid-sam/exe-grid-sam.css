@@ -1,22 +1,109 @@
 .class-header {
+  display: grid;
+  grid-template-rows: 35px 35px 35px;
   color: rgb(250, 249, 250);
   border: 1px solid rgb(21, 17, 17);
   background-color: black;
+  justify-content: center;
+  font-size: 5cap;
+  
 }
 
 .class-nav{
+    display: grid;
+    grid-template-rows: 80px 3px 1px;
     border: 1px solid black;
+    padding-top: 10px;
+    font-size: 1pc;
+    color: white;
+    justify-content: center;
+    background-color: black;
+    grid-template-areas: 'disciplina1 disciplina2 disciplina3 disciplina4';
+}
+
+#c1{
+    grid-area: disciplina1;
+    border: 1px solid black;
+    padding: 35px;
+}
+
+#c2{
+    grid-area: disciplina1;
+    border: 1px solid black;
+    padding: 35px;
+}
+
+#c3{
+    grid-area: disciplina1;
+    border: 1px solid black;
+    padding: 35px;
+}
+
+#c4{
+    grid-area: disciplina1;
+    border: 1px solid black;
+    padding: 35px;
 }
 
 .container-conteudos {
+    display: grid;
+    /* grid-template-columns: 100px 50px 80px 200px;
+    grid-template-rows: 80px 100px 100px; */
     border: 1px solid black;
+    grid-template-areas: 'cont1 cont1 cont2 cont2' 'cont3 cont3 cont4 cont4';   
+   
 
+}
+
+#texto_1 {
+    grid-area: cont1;
+}
+#cc1 {
+    grid-area: cont2;
+}
+#cc2 {
+    grid-area: cont3;
+}
+#cc3 {
+    grid-area: cont4;
 }
 
 .container-imagens{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 80px 80px 80px 80px;
     border: 1px solid black;
+    grid-template-areas: 'imagem1 imagem2 imagem3 imagem4';
+    justify-content: center;
+    background-color: black;
+}
+
+#i1 {
+     /*grid-column: 1/4;*/ 
+    grid-area: imagem1;
+    border-radius: 100%;
+
+}
+#i2 {
+    /* grid-column: 2/4; */
+    grid-area: imagem2;
+    border-radius: 100%;
+}
+#i3 {
+    /* grid-column: 3/4; */
+    grid-area: imagem3;
+    border-radius: 100%;
+}
+#i4 {
+    /* grid-column: 4/4; */
+    grid-area: imagem4;
+    border-radius: 100%;
 }
 
 .container-footer{
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    justify-content: center;
+    padding-top: 100px;
     border: 1px solid black;
 }
